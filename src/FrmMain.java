@@ -1,4 +1,3 @@
-
 import java.util.*;
 import outils.FileStr;
 
@@ -6,7 +5,7 @@ import outils.FileStr;
  * Module 633.1-Programmation / TP Série P10
  *
  * Fenêtre principale de l'application
- *
+ * 
  * @author François Duvernay
  *
  */
