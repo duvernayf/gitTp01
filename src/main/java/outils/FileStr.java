@@ -1,11 +1,13 @@
 package outils;
 
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
+import java.lang.ClassLoader;
 
 /**
  * Lecture d'un fichier texte dans un String[]
@@ -23,14 +25,14 @@ public class FileStr {
       @return le String[] contenant les lignes du fichier texte. */
   public static String[] read (String fileName) {
     try {
-      FileInputStream f = new FileInputStream(fileName);
-      StringBuffer b = new StringBuffer(f.available());
-      int c = f.read();
+      BufferedInputStream in  = new BufferedInputStream(ClassLoader.getSystemResourceAsStream(fileName));
+      StringBuffer b = new StringBuffer(in.available());
+      int c = in.read();
       while (c != EOF) {
         b.append((char)c);
-        c = f.read();
+        c = in.read();
       }
-      f.close();
+      in.close();
       StringTokenizer sT = new StringTokenizer(b.toString(), "\r\n");
       int nbLig = sT.countTokens();
       String[] res = new String[nbLig];
