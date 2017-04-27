@@ -1,3 +1,5 @@
+package domaine;
+
 /**
  * Module 633.1-Programmation / TP Série P10
  * 
