@@ -40,17 +40,9 @@
               </Group>
               <EmptySpace pref="47" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                      <Component id="lblTitreDate" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                      <Component id="lblDate" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnAjouter" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="lstCadeaux" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
-                      <Component id="label2" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="btnAjouter" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lstCadeaux" alignment="1" min="-2" pref="215" max="-2" attributes="0"/>
+                  <Component id="label2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -74,18 +66,12 @@
                   <Component id="lstCadeaux" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lstCadeauxCourante" min="-2" pref="156" max="-2" attributes="0"/>
-                          <Component id="btnAjouter" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblSomme" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="lblDate" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblTitreDate" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lstCadeauxCourante" min="-2" pref="156" max="-2" attributes="0"/>
+                  <Component id="btnAjouter" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblSomme" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="11" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -134,22 +120,12 @@
     </Component>
     <Component class="java.awt.Button" name="btnAjouter">
       <Properties>
-        <Property name="enabled" type="boolean" value="false"/>
         <Property name="label" type="java.lang.String" value="Ajouter"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAjouterActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="java.awt.Label" name="lblTitreDate">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nous sommes le : "/>
-      </Properties>
-    </Component>
-    <Component class="java.awt.Label" name="lblDate">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="[DATE]"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>
