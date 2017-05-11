@@ -1,4 +1,4 @@
-package domaine;
+package ch.hesge.FrancoisDuvernay.domaine;
 
 /**
  * Module 633.1-Programmation / TP Série P10

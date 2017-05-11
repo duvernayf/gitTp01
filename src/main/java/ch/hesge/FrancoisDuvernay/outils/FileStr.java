@@ -1,4 +1,4 @@
-package outils;
+package ch.hesge.FrancoisDuvernay.outils;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

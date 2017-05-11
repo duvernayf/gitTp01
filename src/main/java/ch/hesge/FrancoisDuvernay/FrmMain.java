@@ -1,8 +1,10 @@
+package ch.hesge.FrancoisDuvernay;
 
-import domaine.Personne;
-import domaine.Cadeau;
+
+import ch.hesge.FrancoisDuvernay.domaine.Personne;
+import ch.hesge.FrancoisDuvernay.domaine.Cadeau;
 import java.util.*;
-import outils.FileStr;
+import ch.hesge.FrancoisDuvernay.outils.FileStr;
 
 /**
  * Module 633.1-Programmation / TP S√©rie P10
@@ -19,8 +21,8 @@ public class FrmMain extends java.awt.Frame {
     private static final String CADEAUX_POUR = "Cadeaux pour ";
     private static final String SOMME = "Somme totale: ";
     private static final String DEL_MOTS = ";";
-    private ArrayList listPersonnes = new ArrayList();
-    private ArrayList listCadeaux = new ArrayList();
+    public ArrayList listPersonnes = new ArrayList();
+    public ArrayList listCadeaux = new ArrayList();
 
     /* Constructeur */
     public FrmMain() {
@@ -78,8 +80,8 @@ public class FrmMain extends java.awt.Frame {
             }
         });
 
-        btnAjouter.setEnabled(false);
         btnAjouter.setLabel("Ajouter");
+        btnAjouter.setEnabled(false);
         btnAjouter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAjouterActionPerformed(evt);
@@ -179,8 +181,8 @@ public class FrmMain extends java.awt.Frame {
         btnAjouter.setEnabled(false);
     }//GEN-LAST:event_btnAjouterActionPerformed
 
-    /*M√©thode pour transformer les tableaux en liste pour se faciliter la t√¢che.*/
-    private ArrayList tabToList(String[] tab) {
+    /*MÈthode pour transformer les tableaux en liste pour se faciliter la t‚che.*/
+    public ArrayList tabToList(String[] tab) {
         ArrayList liste = new ArrayList();
         for (int i = 0; i < tab.length; i++) {
             liste.add(tab[i]);
@@ -188,7 +190,7 @@ public class FrmMain extends java.awt.Frame {
         return liste;
     }//tabToList
 
-    private void initListePers() {
+    public void initListePers() {
         ArrayList liste = tabToList(FileStr.read(PERSONNES));
         for (int i = 0; i < liste.size(); i++) {
             ArrayList num = new ArrayList();
@@ -203,7 +205,7 @@ public class FrmMain extends java.awt.Frame {
         }
     }//initListePers
 
-    private void initListeCadeau() {
+    public void initListeCadeau() {
         ArrayList liste = tabToList(FileStr.read(CADEAUX));
         for (int i = 0; i < liste.size(); i++) {
             StringTokenizer st = new StringTokenizer((String) liste.get(i), DEL_MOTS);

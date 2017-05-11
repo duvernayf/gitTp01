@@ -1,4 +1,4 @@
-package domaine;
+package ch.hesge.FrancoisDuvernay.domaine;
 
 import java.util.ArrayList;
 
